@@ -26,7 +26,7 @@ public abstract class AbstratcEmailService implements EmailService {
 		sm.setFrom(sender);
 		sm.setSubject("Pedido confirmado! Código: " + obj.getId());
 		sm.setSentDate(new Date(System.currentTimeMillis()));
-		sm.setText(obj.toString());
+		sm.setText(obj.toString() + "\n\nGerei esse email pela a API do java Fernando!\natt, Tarugo");
 		
 		return sm;
 	}
